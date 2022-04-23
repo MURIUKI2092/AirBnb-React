@@ -29,4 +29,10 @@
   cursor:pointer;
 
 }
+.message{
+  list-style: none;
+  flex-grow: 0.5;
+  cursor:pointer;
+
+}
 

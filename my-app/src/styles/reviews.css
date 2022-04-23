@@ -1,0 +1,18 @@
+.reviews{
+  padding: 10px;
+  margin-left: 100px;
+}
+.quotes{
+  margin-top: 20px;
+  font-size: 30px;
+  color: teal;
+}
+.avatar{
+  margin-top: 20px;
+margin-left: 40%;
+}
+.username{
+  text-align: center;
+  font-family: cursive;
+  margin-top: 10px;
+}

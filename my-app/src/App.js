@@ -3,9 +3,11 @@ import "./styles/navbar.css";
 import "./styles/footer.css";
 import "./styles/header.css";
 import "./styles/inspiration.css";
+import "./styles/reviews.css";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import { Inspiration } from "./components/inspiration";
+import { Reviews } from "./components/reviews";
 
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
    <Navbar/>
    <Header/>
    <Inspiration/>
+   <Reviews/>
    <Footer/>
    </>
   );

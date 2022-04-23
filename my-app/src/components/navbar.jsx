@@ -1,4 +1,7 @@
 import React from 'react'
+import MessageIcon from '@mui/icons-material/Message';
+import Avatar from '@mui/material/Avatar'
+import { green} from '@mui/material/colors';
 
 export const Navbar = () => {
   return (
@@ -12,6 +15,11 @@ export const Navbar = () => {
       </section>
       <section  className='host'>
       <li>  <h3>Become a Host</h3></li>
+      </section>
+      <section className='message'>
+      <Avatar sx={{ bgcolor: green[500] }}>
+          <MessageIcon />
+      </Avatar>
       </section>
 
     </div>
