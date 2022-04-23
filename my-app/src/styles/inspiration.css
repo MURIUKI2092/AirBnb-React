@@ -1,0 +1,22 @@
+.inspiration{
+  margin-top: 50px;
+  margin-left: 40px;
+  padding: 10px;
+  margin-right:40px ;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.inspiration img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+
+}
+ .inspirationHeader{
+  text-align: center;
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}

@@ -1,0 +1,43 @@
+.header{
+  padding: 10px;
+  height: 70%;
+
+  margin-top: 10px;
+   
+  width: 80%;
+}
+.headImg{
+  width: 50%;
+  height: 30%;
+  margin-left: 50px;
+  object-fit: cover;
+}
+img{
+  border-radius: 10px;
+  height: 110vh;
+  width: 90vw;
+  object-fit: cover;
+}
+.headerInfo{
+  margin-top: -300px;
+  margin-left: 200px;
+  margin-bottom: 200px;
+  align-items: center;
+}
+.headerInfo h2{
+  color: aliceblue;
+  font-family: serif
+  ;
+  font-size: 50px;
+}
+.headerInfo button{
+  margin-left: 250px;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: aliceblue;
+  background: linear-gradient(#e66465, #9198e5);
+  cursor: pointer;
+}
