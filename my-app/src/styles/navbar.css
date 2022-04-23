@@ -1,0 +1,32 @@
+.navbar{
+  width: 100%;
+  height: 70px;
+  background-color: rgb(17, 17, 17);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: cursive;
+  z-index: 1000;
+  flex-direction: row;
+}
+.Logo{
+  flex-grow: 5;
+  padding: 10px;
+}
+.Logo h2{
+  color: red;
+  font-size: 25px;
+}
+.logo sup{
+  font-size: 10px;
+}
+.search,.host{
+  font-family:cursive;
+  flex-grow: 3;
+  list-style: none;
+  color: #444;
+  cursor:pointer;
+
+}
+
