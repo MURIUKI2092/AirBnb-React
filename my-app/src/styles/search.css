@@ -1,0 +1,11 @@
+.headerSearch{
+  color: black;
+  font-size: 20px;
+}
+.Location{
+  width: 500px;
+  height: 50px;
+}
+.Location ,option{
+  font-size: 16px;
+}
