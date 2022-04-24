@@ -6,6 +6,7 @@ import "./styles/inspiration.css";
 import "./styles/reviews.css";
 import "./styles/search.css";
 import "./styles/host.css";
+import "./styles/writeReviews.css";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import { Inspiration } from "./components/inspiration";
@@ -18,7 +19,9 @@ function App() {
   return (
    <>
    <Navbar/>
-   <Host/>
+   <Header/>
+   <Inspiration/>
+   <Reviews/>
    <Footer/>
    </>
   );

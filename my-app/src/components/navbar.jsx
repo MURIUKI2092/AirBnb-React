@@ -8,6 +8,7 @@ import Modal from '@mui/material/Modal';
 import { Search } from './search';
 import { Host } from './host';
 import Fade from '@mui/material/Fade';
+import { WriteReview } from './writeReview';
 
 
 const style = {
@@ -18,7 +19,18 @@ const style = {
   width: 600,
   bgcolor: 'background.paper',
  borderRadius:5,
-  boxShadow: 24,
+  
+  p: 4,
+};
+const style3= {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+ borderRadius:5,
+ 
   p: 4,
 };
 const style1= {
@@ -29,13 +41,19 @@ const style1= {
   width: 800,
   bgcolor: 'background.paper',
  borderRadius:5,
-  boxShadow: 24,
+
   p: 4,
 };
 export const Navbar = () => {
   const [open, setOpen] = React.useState(false);
+  const [openHost, setOpenHost] = React.useState(false);
+  const[openChat,setOpenChat]=React.useState(false)
   const handleOpen = () => setOpen(true);
+  const handleOpenHost = () => setOpenHost(true);
+  const handleOpenChat=()=>setOpenChat(true)
   const handleClose = () => setOpen(false);
+  const handleCloseHost = () => setOpenHost(false);
+  const handleCloseChat=()=>setOpenChat(false)
 
   return (
     <div  className='navbar'>
@@ -44,7 +62,7 @@ export const Navbar = () => {
       </section>
       <section  className='search'>
         <li  onClick={handleOpen}>  <h3>Start Your Search</h3></li>
-        
+      
         <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -54,7 +72,7 @@ export const Navbar = () => {
         BackdropComponent={Backdrop}
         BackdropProps={{
           timeout: 500,
-        }}
+        }}setOpenHost
       >
          <Fade in={open}>
           <Box sx={style}>
@@ -65,10 +83,10 @@ export const Navbar = () => {
       
       </section>
       <section  className='host'>
-      <li onClick={handleOpen}>  <h3>Become a Host</h3></li>
+      <li onClick={handleOpenHost}>  <h3>Become a Host</h3></li>
        <Modal
-        open={open}
-        onClose={handleClose}
+        open={openHost}
+        onClose={handleCloseHost}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
@@ -80,9 +98,27 @@ export const Navbar = () => {
       </Modal> 
       </section>
       <section className='message'>
-      <Avatar sx={{ bgcolor: green[500] }}>
+      <Avatar sx={{ bgcolor: green[500] }} onClick={handleOpenChat}>
           <MessageIcon />
+          
       </Avatar>
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        open={openChat}
+        onClose={handleCloseChat}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}setOpenChat
+      >
+        
+          <Box sx={style3}>
+            <WriteReview/>
+          </Box>
+        
+      </Modal>
       </section>
 
     </div>

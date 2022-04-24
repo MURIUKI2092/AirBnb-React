@@ -1,0 +1,17 @@
+.writeReview{
+  color: teal;
+  padding: 15px;
+  list-style: none;
+
+}
+.writeReview li h3{
+  padding: 15px;
+  cursor:pointer;
+  list-style: none;
+  font-size: 20px;
+  color: rgb(83, 250, 250);
+  font-family: serif;
+}
+.icons{
+  margin-right: 10px;
+}
