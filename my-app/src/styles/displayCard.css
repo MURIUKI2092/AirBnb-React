@@ -1,0 +1,16 @@
+.displayCard{
+  margin-top: 20px;
+  margin-left: 30px;
+  padding: 10px;
+  margin-right:20px ;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.displayCard img{
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+
+}

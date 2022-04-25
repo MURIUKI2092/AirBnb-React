@@ -61,6 +61,12 @@ export const Navbar = () => {
         <h2>AirBnb<sup>ke</sup></h2>
       </section>
       <section  className='search'>
+        <li  >  <h3>Home</h3></li>
+      </section>
+      <section  className='search'>
+        <li  >  <h3>Houses</h3></li>
+      </section>
+      <section  className='search'>
         <li  onClick={handleOpen}>  <h3>Start Your Search</h3></li>
       
         <Modal

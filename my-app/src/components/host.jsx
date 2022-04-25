@@ -102,6 +102,16 @@ export const Host = () => {
               autoComplete="Price"
               
             />
+             <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="description"
+              label="description"
+              name="description"
+              autoComplete="description"
+              
+            />
             <input type={"file"} className="upload" />
                           
             <Button
