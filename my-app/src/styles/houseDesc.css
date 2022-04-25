@@ -1,0 +1,45 @@
+.houseDesc{
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 70%;
+  margin-bottom: 100px;
+
+}
+.imageDesc img{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.description{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-top: 10px;
+}
+.descParagraph{
+  padding: 5px;
+  flex-grow: 8;
+  
+  width: 100px;
+ 
+}
+.descParagraph p{
+ 
+  font-size: 16px;
+}
+
+.descOption{
+  flex-grow: 1;
+  padding: 25px;
+
+}
+.houseDesc h2{
+  font-family: serif;
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 20px;
+  
+  padding: 10px;
+  border-bottom: 1px solid rgb(197, 194, 194);
+}
