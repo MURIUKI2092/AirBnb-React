@@ -54,13 +54,23 @@ export const Navbar = () => {
   const handleClose = () => setOpen(false);
   const handleCloseHost = () => setOpenHost(false);
   const handleCloseChat=()=>setOpenChat(false)
+  const [colorChange, setColorchange] =React. useState(false);
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 80){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
 
   return (
-    <div  className='navbar'>
+    <div className={colorChange ? 'navbar colorChange' : 'navbar'}>
       <section className='Logo'>
         <h2>AirBnb<sup>ke</sup></h2>
       </section>
-      <section  className='search'>
+      <section  className='searchhome'>
         <li  >  <h3>Home</h3></li>
       </section>
       <section  className='search'>

@@ -1,27 +1,25 @@
 import React from 'react';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import NativeSelect from '@mui/material/NativeSelect';
+
 
 export const Search = () => {
   return (
-    <div className='search'>
+    <div className='searchLocale'>
 
-       <Container component="main" maxWidth="xs">
+       <Container component="main" maxWidth="xs"
+        sx={{
+          marginTop: 1,
+          
+        }}>
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 1,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -35,44 +33,24 @@ export const Search = () => {
                 
                 Fill to search
                     </Typography>
-          <TextField
-              margin="normal"
-              required
-              fullWidth
-              id="name"
-              label="Username"
-              name="name"
-              autoComplete="namel"
-              autoFocus
-            />
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
-              
-            />
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              name="telephone"
-              label="Telephone"
-               id="password"
-              
-            />
+         
 
-              <select name="Location" id="cars" className='Location'>
-              <option value="none" selected disabled hidden>Select travel location</option>
+        <NativeSelect
+        className='Location'
+          defaultValue={"none"}
+          inputProps={{
+            name: 'towns',
+            id: '',
+          }}
+        >
+          <option value="none" selected disabled hidden>Select travel location</option>
                 <option value="Nakuru">Nakuru</option>
                 <option value="Kisii">Kisii</option>
                 <option value="mombasa">Mombasa</option>
                 <option value="Nairobi">Nairobi</option>
-              </select>
-                          
+          </NativeSelect>
+
+    
             <Button
               type="submit"
               fullWidth

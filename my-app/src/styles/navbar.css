@@ -21,13 +21,22 @@
 .logo sup{
   font-size: 10px;
 }
-.search,.host{
-  font-family:cursive;
+
+  .search,.host,.searchhome{
   flex-grow: 3;
   list-style: none;
-  color: white;
+  color: rgb(123, 122, 122);
   cursor:pointer;
 
+ 
+}
+.search,.host,.searchhome:hover{
+  flex-grow: 3;
+  list-style: none;
+  color:rgb(143, 123, 123);
+  cursor:pointer;
+
+ 
 }
 .message{
   list-style: none;
@@ -35,4 +44,7 @@
   cursor:pointer;
 
 }
+.navbar.colorChange{
+  background-color: white;
 
+}

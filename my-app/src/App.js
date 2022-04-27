@@ -17,13 +17,14 @@ import { Search } from "./components/search";
 import { Host } from "./components/host";
 import { Display } from "./containers/Display";
 import { Description } from "./containers/Description";
+import { Home } from "./containers/home";
 
 
 function App() {
   return (
    <>
    <Navbar/>
-   <Description/>
+   <Home/>
    <Footer/>
    </>
   );
