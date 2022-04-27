@@ -32,11 +32,13 @@ const style3= {
    p: 4,
 };
 const style1= {
+  overflow: 'scroll',
   position: 'absolute',
-  top: '50%',
+  top: '55%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 800,
+  height :600,
   bgcolor: 'background.paper',
  borderRadius:5,
   p: 4,
@@ -51,7 +53,7 @@ export const Navbar = () => {
   const handleClose = () => setOpen(false);
   const handleCloseHost = () => setOpenHost(false);
   const handleCloseChat=()=>setOpenChat(false)
-  const [colorChange, setColorchange] =React. useState(false);
+  const [colorChange, setColorchange] =React.useState(false);
   const changeNavbarColor = () =>{
      if(window.scrollY >= 80){
        setColorchange(true);

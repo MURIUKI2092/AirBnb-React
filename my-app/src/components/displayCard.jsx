@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';import Card from '@mui/material/Card';
+import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
 import Typography from '@mui/material/Typography';

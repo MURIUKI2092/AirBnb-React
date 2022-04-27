@@ -26,7 +26,7 @@ export const Book = () => {
 
             <Typography gutterBottom variant="h5" component="div" className='headerSearch'>
                 
-                Fill to search
+                Fill to book
                     </Typography>
           <TextField
               margin="normal"
@@ -35,7 +35,7 @@ export const Book = () => {
               id="name"
               label="Username"
               name="name"
-              autoComplete="namel"
+              autoComplete="name"
               autoFocus
             />
             <TextField
