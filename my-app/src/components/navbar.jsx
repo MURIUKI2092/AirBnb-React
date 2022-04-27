@@ -13,13 +13,12 @@ import { WriteReview } from './writeReview';
 
 const style = {
   position: 'absolute',
-  top: '50%',
+  top: '25%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 600,
   bgcolor: 'background.paper',
  borderRadius:5,
-  
   p: 4,
 };
 const style3= {
@@ -30,8 +29,7 @@ const style3= {
   width: 400,
   bgcolor: 'background.paper',
  borderRadius:5,
- 
-  p: 4,
+   p: 4,
 };
 const style1= {
   position: 'absolute',
@@ -41,7 +39,6 @@ const style1= {
   width: 800,
   bgcolor: 'background.paper',
  borderRadius:5,
-
   p: 4,
 };
 export const Navbar = () => {
