@@ -1,0 +1,31 @@
+.errorPage{
+  height: 75vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.errImg{
+  width: 30%;
+  padding: 20px;
+  margin-top: 40px;
+
+}
+.errInfo{
+  width: 40%;
+  padding: 20px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.errInfo h1{
+  font-size: 50px;
+  font-family: serif;
+  color: rgb(247, 24, 24);
+}
+.errInfo p{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.errBtn{
+  width: 140px;
+}

@@ -24,11 +24,16 @@
 
   .search,.host,.searchhome{
   flex-grow: 3;
+
+
+ 
+}
+.links{
   list-style: none;
   color: rgb(123, 122, 122);
   cursor:pointer;
+  text-decoration: none;
 
- 
 }
 .search,.host,.searchhome:hover{
   flex-grow: 3;
