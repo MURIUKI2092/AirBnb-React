@@ -9,7 +9,7 @@ import { Search } from './search';
 import { Host } from './host';
 import Fade from '@mui/material/Fade';
 import { WriteReview } from './writeReview';
-
+import {Link} from 'react-router-dom'
 
 const style = {
   position: 'absolute',
@@ -51,7 +51,7 @@ export const Navbar = () => {
   const handleClose = () => setOpen(false);
   const handleCloseHost = () => setOpenHost(false);
   const handleCloseChat=()=>setOpenChat(false)
-  const [colorChange, setColorchange] =React. useState(false);
+  const [colorChange, setColorchange] =React.useState(false);
   const changeNavbarColor = () =>{
      if(window.scrollY >= 80){
        setColorchange(true);
@@ -68,10 +68,10 @@ export const Navbar = () => {
         <h2>AirBnb<sup>ke</sup></h2>
       </section>
       <section  className='searchhome'>
-        <li  >  <h3>Home</h3></li>
+        <Link to="/"className="links"  > <h3>Home</h3></Link>
       </section>
       <section  className='search'>
-        <li  >  <h3>Houses</h3></li>
+      <Link to="/houses"className="links"  > <h3>Houses</h3></Link>
       </section>
       <section  className='search'>
         <li  onClick={handleOpen}>  <h3>Start Your Search</h3></li>

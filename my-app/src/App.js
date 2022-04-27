@@ -9,17 +9,23 @@ import "./styles/host.css";
 import "./styles/writeReviews.css";
 import "./styles/displayCard.css";
 import "./styles/houseDesc.css";
+import "./styles/error.css";
 import { Footer } from "./components/footer";
 import { Home } from "./containers/home";
+import Router from "./router";
+import { Display } from "./containers/Display";
+import { Error } from "./components/error";
 
 
 function App() {
   return (
-   <>
-   <Navbar/>
+   <Router>
+   
    <Home/>
-   <Footer/>
-   </>
+   <Display/>
+   <Error/>
+  
+   </Router>
   );
 }
 
