@@ -10,6 +10,11 @@
   margin-top: 40px;
 
 }
+.errLink{
+  cursor:pointer;
+  text-decoration: none;
+
+}
 .errInfo{
   width: 40%;
   padding: 20px;

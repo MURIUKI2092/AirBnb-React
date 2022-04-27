@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@mui/material/Button';
+import {Link} from 'react-router-dom'
 import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDissatisfied';
 
 export const  Error = () => {
@@ -12,6 +13,7 @@ export const  Error = () => {
           <h1>404  -  PAGE NOT FOUND!</h1>
           <p>The page you  are looking for might have been removed, had it's name changed
              or is temporarily unavailable</p>
+             <Link to={"/"}  className="errLink">
              <Button
               type="submit"
               className='errBtn'
@@ -20,6 +22,8 @@ export const  Error = () => {
             >
             HomePage
             </Button>
+             </Link>
+           
       </div>
     
 
