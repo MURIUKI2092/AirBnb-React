@@ -1,8 +1,9 @@
 import React from 'react'
 import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';import Card from '@mui/material/Card';
+import SendIcon from '@mui/icons-material/Send';
+import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-
+import {Link} from 'react-router-dom'
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
@@ -27,14 +28,17 @@ export const DisplayCard = () => {
         <Typography variant="body1" color="text.primary">
         Price : <strong>2000</strong>
         </Typography>
-      
-        <Button className='bookBtn'
+      <Link to={"/houses/description"} className="errLink">
+      <Button className='bookBtn'
                     type="submit"
                     variant="contained"
                     sx={{ mt: 3, mb: 2 }}
                   >
                   Book Now
                   </Button>
+
+      </Link>
+        
       </CardContent>
     </CardActionArea>
   </Card>
@@ -57,13 +61,16 @@ export const DisplayCard = () => {
         Price : <strong>2000</strong>
         </Typography>
       
-        <Button className='bookBtn'
+        <Link to={"/houses/description"} className="errLink">
+      <Button className='bookBtn'
                     type="submit"
                     variant="contained"
                     sx={{ mt: 3, mb: 2 }}
                   >
                   Book Now
                   </Button>
+
+      </Link>
       </CardContent>
     </CardActionArea>
   </Card>
@@ -85,13 +92,16 @@ export const DisplayCard = () => {
         Price : <strong>2000</strong>
         </Typography>
       
-        <Button className='bookBtn'
+        <Link to={"/houses/description"} className="errLink">
+      <Button className='bookBtn'
                     type="submit"
                     variant="contained"
                     sx={{ mt: 3, mb: 2 }}
                   >
                   Book Now
                   </Button>
+
+      </Link>
       </CardContent>
     </CardActionArea>
   </Card>
