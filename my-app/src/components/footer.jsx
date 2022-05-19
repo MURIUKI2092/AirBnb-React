@@ -15,38 +15,24 @@ export const Footer = () => {
       </section>
         </div>
         <div  className='details2'>
-        <h2>Our Products</h2>
+        <h2>Our Services</h2>
           <ul class="footer-links">
-          <li className='footerListItem'>HOME</li>
-              <li className='footerListItem'>ABOUT</li>
-              <li className='footerListItem'>CONTACT</li>
-              <li className='footerListItem'>WRITE</li>
-              <li className='footerListItem'>LOGOUT</li>
+          <li className='footerListItem'>Host a house</li>
+              <li className='footerListItem'>book a house</li>
+              
 
             </ul>
         </div>
         <div  className='details3'>
         <h2>Help & Support</h2>
          <ul class="footer-links">
-         <li className='footerListItem'>HOME</li>
-              <li className='footerListItem'>ABOUT</li>
-              <li className='footerListItem'>CONTACT</li>
-              <li className='footerListItem'>WRITE</li>
-              <li className='footerListItem'>LOGOUT</li>
+         <li className='footerListItem'>talk to us</li>
+              <li className='footerListItem'>share your moment</li>
+             
 
             </ul> 
         </div>
-        <div  className='details4'>
-        <h2>About</h2>
-          <ul class="footer-links">
-          <li className='footerListItem'>HOME</li>
-              <li className='footerListItem'>ABOUT</li>
-              <li className='footerListItem'>CONTACT</li>
-              <li className='footerListItem'>WRITE</li>
-              <li className='footerListItem'>LOGOUT</li>
-
-            </ul>
-        </div>
+        
       </div>
       <div className='otherFooterDetails'>
         <div className='copyWriteInfo'>
