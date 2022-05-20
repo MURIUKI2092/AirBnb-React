@@ -8,9 +8,114 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.landingCard{
+  display: flex;
+  flex-direction: column;
+}
 .displayCard img{
   height: 200px;
   width: 300px;
   object-fit: cover;
 
+}
+@media screen and (min-width: 1200px) {
+  displayCard{
+    
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 10px;
+    margin-right:20px ;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .displayCard img{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+  
+  }
+  #displayCard h3{
+    font-size:20px;
+  }
+ #displayCard  p{
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 800px) {
+  displayCard{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    margin-right:20px ;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .displayCard img{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+  
+  }
+  #displayCard h3{
+    font-size:17px;
+  }
+ #displayCard  p{
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 600px) {
+  displayCard{
+    margin-top: 40px;
+    margin-left: 5px;
+    padding: 5px;
+    margin-right:2px ;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .displayCard img{
+    height: 150px;
+    width: 180px;
+    object-fit: cover;
+  
+  }
+  #displayCard h3{
+    font-size:15px;
+  }
+ #displayCard  p{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 400px) {
+  displayCard{
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 3px;
+    padding: 0px;
+    margin-right:2px ;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+  }
+  .displayCard img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  
+  }
+ #displayCard  h3{
+    font-size:10px;
+  }
+ #displayCard  h5{
+    font-size: 9px;
+  }
 }

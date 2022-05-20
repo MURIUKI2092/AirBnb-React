@@ -16,3 +16,85 @@ margin-left: 40%;
   font-family: cursive;
   margin-top: 10px;
 }
+@media (min-width: 600px) and (max-width: 800px){
+  .reviews{
+    padding: 8px;
+    margin: left 150px; ;
+  }
+  .quotes{
+    margin-top: 20px;
+    font-size: 30px;
+    color: teal;
+  }
+  .avatar{
+    margin-top: 20px;
+  margin-left: 40%;
+  }
+  .username{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 10px;
+  }
+}
+  @media (min-width: 800px) and (max-width: 1200px){
+    .reviews{
+      padding: 10px;
+      margin-left: 100px;
+    }
+    .quotes{
+      margin-top: 20px;
+      font-size: 30px;
+      color: teal;
+    }
+    .avatar{
+      margin-top: 20px;
+    margin-left: 40%;
+    }
+    .username{
+      text-align: center;
+      font-family: cursive;
+      margin-top: 10px;
+    }
+  }
+
+@media (min-width: 400px) and (max-width: 600px){
+  .reviews{
+    padding: 10px;
+    margin-left: 50px;
+  }
+  .quotes{
+    margin-top: 20px;
+    font-size: 30px;
+    color: teal;
+  }
+  .avatar{
+    margin-top: 20px;
+  margin-left: 40%;
+  }
+  .username{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 400px){
+  .reviews{
+    padding: 5px;
+    width: auto;
+    margin-left: 20px;
+  }
+  .quotes{
+    margin-top: 20px;
+    font-size: 20px;
+    color: teal;
+  }
+  .avatar{
+    margin-top: 20px;
+  margin-left: 40%;
+  }
+  .username{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 10px;
+  }
+}

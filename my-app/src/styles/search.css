@@ -12,3 +12,22 @@
 .searchLocale{
   margin-top: -20px;
 }
+
+@media screen and (max-width: 400px){
+  .headerSearch{
+    color: black;
+    font-size: 20px;
+  }
+  .Location{
+    width: 50px;
+    height: 30px;
+    overflow-y: scroll;
+  }
+  .Location ,option{
+    font-size: 8px;
+  }
+  .searchLocale{
+    margin-top: -20px;
+    width: auto;
+  }
+}

@@ -34,3 +34,169 @@
 .errBtn{
   width: 140px;
 }
+@media screen and (max-width: 400px) {
+  .errorPage{
+    width: auto;
+    height: 50vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .sadEmoji{
+    font-size: 50px !important;
+    
+  }
+  .errImg{
+    width: 10%;
+    padding: 10px;
+    margin-top: 20px;
+  
+  }
+  .errLink{
+    cursor:pointer;
+    text-decoration: none;
+  
+  }
+  .errInfo{
+    width: auto;
+    padding: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .errInfo h1{
+    font-size: 25px;
+    font-family: serif;
+    color: rgb(247, 24, 24);
+  }
+  .errInfo p{
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .errBtn{
+    width: 70px;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px)  {
+  .errorPage{
+    height: 60vh;
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+  }
+  .sadEmoji{
+    font-size: 100px !important;
+    
+  }
+  .errImg{
+    width: auto;
+    padding: 14px;
+    margin-top: 25px;
+  
+  }
+  .errLink{
+    cursor:pointer;
+    text-decoration: none;
+  
+  }
+  .errInfo{
+    width: auto;
+    padding: 14px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .errInfo h1{
+    font-size: 35px;
+    font-family: serif;
+    color: rgb(247, 24, 24);
+  }
+  .errInfo p{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .errBtn{
+    width: 90px;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px)  {
+  .errorPage{
+    height: 65vh;
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+  }
+  .errImg{
+    width: 30%;
+    padding: 18px;
+    margin-top: 50px;
+  
+  }
+  .sadEmoji{
+    font-size: 150px !important;
+    
+  }
+  .errLink{
+    cursor:pointer;
+    text-decoration: none;
+  
+  }
+  .errInfo{
+    width: auto;
+    padding: 118px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .errInfo h1{
+    font-size: 40px;
+    font-family: serif;
+    color: rgb(247, 24, 24);
+  }
+  .errInfo p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .errBtn{
+    width: 110px;
+  }
+  @media (min-width: 800px) and (max-width: 1200px){
+    .errorPage{
+      height: 75vh;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+    }
+    .errImg{
+      width: 30%;
+      padding: 20px;
+      margin-top: 40px;
+    
+    }
+    .errLink{
+      cursor:pointer;
+      text-decoration: none;
+    
+    }
+    .errInfo{
+      width: 40%;
+      padding: 20px;
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+    }
+    .errInfo h1{
+      font-size: 50px;
+      font-family: serif;
+      color: rgb(247, 24, 24);
+    }
+    .errInfo p{
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .errBtn{
+      width: 140px;
+    }
+
+  }
+}

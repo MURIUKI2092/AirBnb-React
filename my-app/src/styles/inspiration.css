@@ -9,6 +9,9 @@
   flex-wrap: wrap;
 
 }
+.landingCard{
+  margin-top: 20px;
+}
 .inspiration img{
   height: 300px;
   width: 300px;
@@ -19,4 +22,11 @@
   text-align: center;
   font-size: 30px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+@media screen and (max-width: 400px){
+  .inspirationHeader{
+    text-align: center;
+    font-size: 8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
 }
