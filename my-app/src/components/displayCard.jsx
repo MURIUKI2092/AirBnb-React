@@ -11,7 +11,7 @@ import { CardActionArea } from '@mui/material';
 export const DisplayCard = () => {
   return (
     <section className='displayCard'>
-         <Card sx={{ maxWidth: 300,maxHeight:400 }} /* className="landingCard" */>
+         <Card sx={{ maxWidth: 300,maxHeight:400 }}  className="landingCard" >
     <CardActionArea>
       <img
       
@@ -20,13 +20,13 @@ export const DisplayCard = () => {
       />
       <CardContent>
         <Typography gutterBottom variant="h3" component="div">
-          Kisumu
+          <h3>Kisumu</h3>
         </Typography>
         <Typography variant="body1" color="text.primary">
-         400 Km away
+         <h5>400 Km away</h5>
         </Typography>
         <Typography variant="body1" color="text.primary">
-        Price : <strong>2000</strong>
+     <h5>   Price : <strong>2000</strong></h5>
         </Typography>
       <Link to={"/houses/description"} className="errLink">
       <Button className='bookBtn'
@@ -43,7 +43,7 @@ export const DisplayCard = () => {
     </CardActionArea>
   </Card>
 
-  <Card sx={{ maxWidth: 300,maxHeight:400 }} /* className="landingCard" */>
+  <Card sx={{ maxWidth: 300,maxHeight:400 }}  className="landingCard" >
     <CardActionArea>
       <img
       
@@ -52,16 +52,15 @@ export const DisplayCard = () => {
       />
       <CardContent>
         <Typography gutterBottom variant="h3" component="div">
-          Kisumu
+          <h3>Kisumu</h3>
         </Typography>
         <Typography variant="body1" color="text.primary">
-         400 Km away
+         <p>400 Km away</p>
         </Typography>
         <Typography variant="body1" color="text.primary">
-        Price : <strong>2000</strong>
+     <p>   Price : <strong>2000</strong></p>
         </Typography>
-      
-        <Link to={"/houses/description"} className="errLink">
+      <Link to={"/houses/description"} className="errLink">
       <Button className='bookBtn'
                     type="submit"
                     variant="contained"
@@ -71,10 +70,11 @@ export const DisplayCard = () => {
                   </Button>
 
       </Link>
+        
       </CardContent>
     </CardActionArea>
   </Card>
-  <Card sx={{ maxWidth: 300,maxHeight:400 }} /* className="landingCard" */>
+  <Card sx={{ maxWidth: 300,maxHeight:400 }}  className="landingCard" >
     <CardActionArea>
       <img
       
@@ -83,16 +83,15 @@ export const DisplayCard = () => {
       />
       <CardContent>
         <Typography gutterBottom variant="h3" component="div">
-          Kisumu
+          <h3>Kisumu</h3>
         </Typography>
         <Typography variant="body1" color="text.primary">
-         400 Km away
+         <p>400 Km away</p>
         </Typography>
         <Typography variant="body1" color="text.primary">
-        Price : <strong>2000</strong>
+     <p>   Price : <strong>2000</strong></p>
         </Typography>
-      
-        <Link to={"/houses/description"} className="errLink">
+      <Link to={"/houses/description"} className="errLink">
       <Button className='bookBtn'
                     type="submit"
                     variant="contained"
@@ -102,6 +101,7 @@ export const DisplayCard = () => {
                   </Button>
 
       </Link>
+        
       </CardContent>
     </CardActionArea>
   </Card>

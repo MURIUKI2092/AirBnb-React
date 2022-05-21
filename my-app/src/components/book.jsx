@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -8,6 +8,19 @@ import Container from '@mui/material/Container';
 
 
 export const Book = () => {
+      const [ username,setUsername]= useState("");
+      const [email,setEmail]= useState("");
+      const [telephone,setTelephone]=useState("");
+
+      const handleSubmit = async(event)=>{
+        event.preventDefault();
+        const newHost ={
+          username,
+          email,
+          telephone,
+          
+        }
+      }
   return (
     <div className='book'>
              <Container component="main" maxWidth="xs">
@@ -37,6 +50,7 @@ export const Book = () => {
               name="name"
               autoComplete="name"
               autoFocus
+              onChange={setUsername}
             />
             <TextField
               margin="normal"
@@ -46,6 +60,7 @@ export const Book = () => {
               label="Email Address"
               name="email"
               autoComplete="email"
+              onChange={setEmail}
               
             />
             <TextField
@@ -54,12 +69,14 @@ export const Book = () => {
               fullWidth
               name="telephone"
               label="Telephone"
-               id="password"
+              id="telephone"
+               onChange={setTelephone}
               
             />
 
                                         
             <Button
+             onSubmit={handleSubmit}
               type="submit"
               fullWidth
               variant="contained"
