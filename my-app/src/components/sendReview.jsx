@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
+
 
 
 export const SendReview = () => {
+  const [review,setReview]= useState("")
+
+  const handleSubmit =  async(event)=>{
+    event.preventDefault();
+    const newReview ={
+      review
+
+    }
+  }
   return (
     <div  className='sendReview'>
       <Box
+      
       component="form"
       sx={{
         '& > :not(style)': { m: 1, width: '25ch' },
@@ -16,16 +26,29 @@ export const SendReview = () => {
       noValidate
       autoComplete="off"
     >
-          <TextField id="standard-basic" label="Write Your Review" variant="standard" />
-    </Box>
-    <Button
+          <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="review"
+              label="review"
+              name="review"
+              autoComplete="review"
+              sx={{ width:'20ch'}}
+              onChange={setReview}
+              
+            />
+            <Button
+            onSubmit={handleSubmit}
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-            <SendIcon/>
+            Send Review
             </Button>
+    </Box>
+    
     
     </div>
   )

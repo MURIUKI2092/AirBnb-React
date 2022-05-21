@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
+
 
 export const Ask = () => {
+  const  [ question,setQuestion]= useState("")
+
+  const handleSubmit =async(e)=>{
+    e.preventDefault();
+    const newQuestion ={
+      question
+    }
+  }
   return (
     <div>
        <Box
@@ -15,9 +23,14 @@ export const Ask = () => {
       noValidate
       autoComplete="off"
     >
-          <TextField id="standard-basic" label="Ask your Question" variant="standard" />
-    </Box>
-    <Button
+          <TextField id="standard-basic" 
+          label="Ask your Question"
+           variant="standard" 
+          
+           onChange={setQuestion}
+           />
+          <Button
+          onSubmit={handleSubmit}
               type="submit"
               fullWidth
               variant="contained"
@@ -25,6 +38,8 @@ export const Ask = () => {
             >
             Ask
             </Button>
+    </Box>
+    
     </div>
   )
 }
