@@ -2,6 +2,9 @@
   color: teal;
   padding: 15px;
   list-style: none;
+  height: 50vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 
 }
 .writeReview li h3{

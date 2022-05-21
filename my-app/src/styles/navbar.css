@@ -53,3 +53,253 @@
   background-color: white;
 
 }
+
+@media screen and (max-width: 400px) {
+  .navbar{
+    width: auto;
+    height: 50px;
+    background-color: rgb(17, 17, 17);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* font-family: cursive; */
+    z-index: 1000;
+    flex-direction: row;
+  }
+  .Logo{
+    flex-grow: 3;
+    padding: 5px;
+  }
+  .Logo h2{
+    color: red;
+    font-size: 7px;
+  }
+  .logo sup{
+    font-size: 2px;
+  }
+  
+    .search,.host,.searchhome{
+    flex: grow 1.8;
+  
+  
+   
+  }
+  .links{
+    list-style: none;
+    color: rgb(123, 122, 122);
+    cursor:pointer;
+    text-decoration: none;
+  
+  }
+  .search,.host,.searchhome:hover{
+    flex-grow: 1.9;
+    list-style: none;
+    color:rgb(143, 123, 123);
+    cursor:pointer;
+  
+   
+  }
+  .message{
+    list-style: none;
+    flex-grow: 0.5;
+    cursor:pointer;
+  
+  }
+  .navbar.colorChange{
+    background-color: white;
+  
+  }
+  h3{
+    font-size: 5px;
+  }
+
+ 
+}
+
+@media (min-width: 400px) and (max-width: 600px)  {
+  .navbar{
+    width: auto;
+    height: 70px;
+    background-color: rgb(17, 17, 17);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* font-family: cursive; */
+    z-index: 1000;
+    flex-direction: row;
+  }
+  .Logo{
+    flex-grow: 3.5;
+    padding: 7px;
+  }
+  .Logo h2{
+    color: red;
+    font-size: 15px;
+  }
+  .logo sup{
+    font-size: 7px;
+  }
+  
+    .search,.host,.searchhome{
+    flex: grow 2;
+  
+  
+   
+  }
+  .links{
+    list-style: none;
+    color: rgb(123, 122, 122);
+    cursor:pointer;
+    text-decoration: none;
+  
+  }
+  .search,.host,.searchhome:hover{
+    flex-grow: 2.1;
+    list-style: none;
+    color:rgb(143, 123, 123);
+    cursor:pointer;
+  
+   
+  }
+  .message{
+    list-style: none;
+    flex-grow: 0.7;
+    cursor:pointer;
+  
+  }
+  .navbar.colorChange{
+    background-color: white;
+  
+  }
+  h3{
+    font-size: 8px;
+  }
+
+ 
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .navbar{
+    width: auto;
+    height: 60px;
+    background-color: rgb(17, 17, 17);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* font-family: cursive; */
+    z-index: 1000;
+    flex-direction: row;
+  }
+  .Logo{
+    flex-grow: 4;
+    padding: 8px;
+  }
+  .Logo h2{
+    color: red;
+    font-size: 20px;
+  }
+  .logo sup{
+    font-size: 8px;
+  }
+  
+    .search,.host,.searchhome{
+    flex: grow 2.4;
+  
+  
+   
+  }
+  .links{
+    list-style: none;
+    color: rgb(123, 122, 122);
+    cursor:pointer;
+    text-decoration: none;
+  
+  }
+  .search,.host,.searchhome:hover{
+    flex-grow: 2.3;
+    list-style: none;
+    color:rgb(143, 123, 123);
+    cursor:pointer;
+  
+   
+  }
+  .message{
+    list-style: none;
+    flex-grow: 0.9;
+    cursor:pointer;
+  
+  }
+  .navbar.colorChange{
+    background-color: white;
+  
+  }
+  h3{
+    font-size: 15px;
+  }
+
+ 
+}
+@media (min-width: 800px) and (max-width: 1200px){
+  .navbar{
+    width: auto;
+    height: 70px;
+    background-color: rgb(17, 17, 17);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* font-family: cursive; */
+    z-index: 1000;
+    flex-direction: row;
+  }
+  .Logo{
+    flex-grow: 5;
+    padding: 10px;
+  }
+  .Logo h2{
+    color: red;
+    font-size: 25px;
+  }
+  .logo sup{
+    font-size: 10px;
+  }
+  
+    .search,.host,.searchhome{
+    flex: grow 3;
+  
+  
+   
+  }
+  .links{
+    list-style: none;
+    color: rgb(123, 122, 122);
+    cursor:pointer;
+    text-decoration: none;
+  
+  }
+  .search,.host,.searchhome:hover{
+    flex-grow: 3;
+    list-style: none;
+    color:rgb(143, 123, 123);
+    cursor:pointer;
+  
+   
+  }
+  .message{
+    list-style: none;
+    flex-grow: 0.5;
+    cursor:pointer;
+  
+  }
+  .navbar.colorChange{
+    background-color: white;
+  
+  }
+  h3{
+    font-size: 18px;
+  }
+
+ 
+}
