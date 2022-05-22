@@ -12,12 +12,24 @@ export const DisplayCard = () => {
   const [houses,setHouses]=useState([])
 
   useEffect(()=>{
-    Axios.get("http://127.0.0.1:5000/api/v1/house")
-    .then(res=>{
-      console.log("fetch from ", res.data)
-      setHouses(res.data)
-    }).catch(err=>console.log(err))
-    
+    const  fetchHouses = async()=>{
+      try{
+        const response = await Axios.get("http://127.0.0.1:5000/api/v1/house/");
+        setHouses(response.data);
+        console.log(response.data); 
+      }catch(err){
+        if(err.response){
+          //Not in the 200 response range
+          console.log(err.response.data);
+          console.log(err.response.status);
+          console.log(err.response.headers);
+        }else{
+        console.log(`Error:${err.message}`);
+
+        }
+      }
+    }
+    fetchHouses()
 
   },[])
   const arr = houses.map((house)=>{
